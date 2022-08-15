@@ -13,7 +13,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/home_heartbeat_layout">
+        app:layout_constraintBottom_toTopOf="@id/home_movement_layout">
 
         <TextView
             android:id="@+id/home_temp_title"
@@ -49,7 +49,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/home_heartbeat_layout"
+        android:id="@+id/home_movement_layout"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -58,17 +58,17 @@
         app:layout_constraintEnd_toEndOf="parent">
 
         <TextView
-            android:id="@+id/home_heartbeat_title"
+            android:id="@+id/home_movement_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/teal_200"
             android:textSize="32sp"
-            android:text="@string/home_heartbeat_title"
-            app:layout_constraintBottom_toTopOf="@id/home_heartbeat_value"
+            android:text="@string/home_movement_title"
+            app:layout_constraintBottom_toTopOf="@id/home_movement_value"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"/>
         <TextView
-            android:id="@+id/home_heartbeat_value"
+            android:id="@+id/home_movement_value"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/teal_200"
@@ -79,12 +79,12 @@
             app:layout_constraintTop_toTopOf="parent"
             tools:text="126 bpm" />
         <TextView
-            android:id="@+id/home_heartbeat_text"
+            android:id="@+id/home_movement_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textColor="@color/teal_200"
             android:textSize="24sp"
-            app:layout_constraintTop_toBottomOf="@id/home_heartbeat_value"
+            app:layout_constraintTop_toBottomOf="@id/home_movement_value"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="Looks Ok"/>

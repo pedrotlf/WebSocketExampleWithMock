@@ -1,7 +1,7 @@
 package br.com.pedrotlf.trabalho_iot.presentation.data.repository
 
 import android.util.Log
-import br.com.pedrotlf.trabalho_iot.presentation.data.dto.PetDataDTO
+import br.com.pedrotlf.trabalho_iot.presentation.data.dto.toPetDataDTO
 import br.com.pedrotlf.trabalho_iot.presentation.domain.repository.PetRepository
 import io.socket.client.IO
 import io.socket.client.Socket
@@ -38,8 +38,8 @@ object PetSocketConnection : PetRepository() {
         mSocket?.on("???"){ args ->
             if(args[0] != null){
                 try {
-                    val data = args[0] as PetDataDTO
-                    onDataReceived?.invoke(data)
+                    val data = args[0] as String
+                    onDataReceived?.invoke(data.toPetDataDTO())
                 } catch (e: Exception) {
                     onDataReceived?.invoke(null)
                 }

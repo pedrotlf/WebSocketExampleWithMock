@@ -21,8 +21,10 @@ object PetSocketMock : PetRepository(){
         loop = timer("AlertsRequest", false, 0, 4000){
             onDataReceived?.invoke(
                 PetDataDTO(
-                    (90..220).random(),
-                    ((358..405).random() / 10.0)
+                    (0..5).random() / 100.0,
+                    (0..96).random() / 100.0,
+                    (0..5).random() / 100.0,
+                    (358..405).random() / 10.0
                 )
             )
         }

@@ -4,30 +4,34 @@ import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
 import br.com.pedrotlf.trabalho_iot.R
 import br.com.pedrotlf.trabalho_iot.presentation.data.dto.PetDataDTO
+import kotlin.math.pow
+import kotlin.math.sqrt
 
 data class PetData (
-    val heartbeat: Int,
-    @ColorRes val heartbeatColor: Int,
-    @StringRes val heartbeatText: Int,
+    val acceleration: Double,
+    @ColorRes val movementColor: Int,
+    @StringRes val movementText: Int,
     val temp: Double,
     @ColorRes val tempColor: Int,
     @StringRes val tempText: Int,
 )
 
 fun PetDataDTO.toPetData(): PetData {
+    val acFinal = sqrt(acx.pow(2) + acy.pow(2) + acz.pow(2)) * 9.8
+
     val hbText: Int
     val hbColor: Int
     when{
-        heartbeat > 160 -> {
-            hbText = R.string.heartbeat_high
+        acFinal > 6 -> {
+            hbText = R.string.movement_high
             hbColor = R.color.hot
         }
-        heartbeat < 120 -> {
-            hbText = R.string.heartbeat_low
+        acFinal < 2 -> {
+            hbText = R.string.movement_low
             hbColor = R.color.cold
         }
         else -> {
-            hbText = R.string.heartbeat_ok
+            hbText = R.string.movement_ok
             hbColor = R.color.normal
         }
     }
@@ -49,5 +53,5 @@ fun PetDataDTO.toPetData(): PetData {
         }
     }
 
-    return PetData(heartbeat, hbColor, hbText, temp, tempColor, tempText)
+    return PetData(acFinal, hbColor, hbText, temp, tempColor, tempText)
 }

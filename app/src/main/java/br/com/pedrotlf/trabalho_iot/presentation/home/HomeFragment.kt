@@ -59,15 +59,15 @@ class HomeFragment: BaseFragment() {
 
     private fun updateHeartbeatInfo(petData: PetData) {
         binding.apply {
-            val textColor = ContextCompat.getColor(requireContext(), petData.heartbeatColor)
+            val textColor = ContextCompat.getColor(requireContext(), petData.movementColor)
 
-            homeHeartbeatTitle.setTextColor(textColor)
+            homeMovementTitle.setTextColor(textColor)
 
-            homeHeartbeatValue.text = getString(R.string.home_heartbeat_value, petData.heartbeat)
-            homeHeartbeatValue.setTextColor(textColor)
+            homeMovementValue.text = getString(R.string.home_movement_value, petData.acceleration)
+            homeMovementValue.setTextColor(textColor)
 
-            homeHeartbeatText.text = getString(petData.heartbeatText)
-            homeHeartbeatText.setTextColor(textColor)
+            homeMovementText.text = getString(petData.movementText)
+            homeMovementText.setTextColor(textColor)
         }
     }
 }

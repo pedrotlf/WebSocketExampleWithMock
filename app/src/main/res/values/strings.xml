@@ -3,14 +3,14 @@
 
     <string name="home_temp_title">Pet\'s temperature</string>
     <string name="home_temp_value">%1$.1fºC</string>
-    <string name="home_heartbeat_title">Pet\'s heartbeat</string>
-    <string name="home_heartbeat_value">%1$d bpm</string>
+    <string name="home_movement_title">Pet\'s movement</string>
+    <string name="home_movement_value">%1$.2f m/s²</string>
 
     <string name="temp_ok">Looks OK</string>
     <string name="temp_low">Temperature is lower then expected</string>
     <string name="temp_high">Temperature is high!</string>
 
-    <string name="heartbeat_ok">Looks OK</string>
-    <string name="heartbeat_low">Heart is beating slow zzZZzz</string>
-    <string name="heartbeat_high">Your pet is excited!</string>
+    <string name="movement_ok">Looks OK</string>
+    <string name="movement_low">Your pet is calm</string>
+    <string name="movement_high">Your pet is excited!</string>
 </resources>
