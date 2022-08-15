@@ -1,8 +1,8 @@
-package br.com.pedrotlf.trabalho_iot.presentation.data.repository
+package br.com.pedrotlf.trabalho_iot.data.repository
 
 import android.util.Log
-import br.com.pedrotlf.trabalho_iot.presentation.data.dto.toPetDataDTO
-import br.com.pedrotlf.trabalho_iot.presentation.domain.repository.PetRepository
+import br.com.pedrotlf.trabalho_iot.data.dto.toPetDataDTO
+import br.com.pedrotlf.trabalho_iot.domain.repository.PetRepository
 import io.socket.client.IO
 import io.socket.client.Socket
 import java.net.URISyntaxException

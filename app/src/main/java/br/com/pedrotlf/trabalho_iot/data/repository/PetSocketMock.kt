@@ -1,7 +1,7 @@
-package br.com.pedrotlf.trabalho_iot.presentation.data.repository
+package br.com.pedrotlf.trabalho_iot.data.repository
 
-import br.com.pedrotlf.trabalho_iot.presentation.data.dto.PetDataDTO
-import br.com.pedrotlf.trabalho_iot.presentation.domain.repository.PetRepository
+import br.com.pedrotlf.trabalho_iot.data.dto.PetDataDTO
+import br.com.pedrotlf.trabalho_iot.domain.repository.PetRepository
 import java.util.*
 import kotlin.concurrent.timer
 

@@ -1,4 +1,4 @@
-package br.com.pedrotlf.trabalho_iot.presentation.data.dto
+package br.com.pedrotlf.trabalho_iot.data.dto
 
 data class PetDataDTO(
     val acx: Double,

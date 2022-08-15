@@ -2,8 +2,8 @@ package br.com.pedrotlf.trabalho_iot.presentation.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import br.com.pedrotlf.trabalho_iot.presentation.domain.model.PetData
-import br.com.pedrotlf.trabalho_iot.presentation.domain.use_case.FetchPetDataUseCase
+import br.com.pedrotlf.trabalho_iot.domain.model.PetData
+import br.com.pedrotlf.trabalho_iot.domain.use_case.FetchPetDataUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.MutableStateFlow

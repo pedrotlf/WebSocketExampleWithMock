@@ -1,6 +1,6 @@
-package br.com.pedrotlf.trabalho_iot.presentation.domain.repository
+package br.com.pedrotlf.trabalho_iot.domain.repository
 
-import br.com.pedrotlf.trabalho_iot.presentation.data.dto.PetDataDTO
+import br.com.pedrotlf.trabalho_iot.data.dto.PetDataDTO
 
 abstract class PetRepository {
 

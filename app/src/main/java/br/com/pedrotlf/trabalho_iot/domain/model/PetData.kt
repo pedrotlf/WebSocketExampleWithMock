@@ -1,9 +1,9 @@
-package br.com.pedrotlf.trabalho_iot.presentation.domain.model
+package br.com.pedrotlf.trabalho_iot.domain.model
 
 import androidx.annotation.ColorRes
 import androidx.annotation.StringRes
 import br.com.pedrotlf.trabalho_iot.R
-import br.com.pedrotlf.trabalho_iot.presentation.data.dto.PetDataDTO
+import br.com.pedrotlf.trabalho_iot.data.dto.PetDataDTO
 import kotlin.math.pow
 import kotlin.math.sqrt
 

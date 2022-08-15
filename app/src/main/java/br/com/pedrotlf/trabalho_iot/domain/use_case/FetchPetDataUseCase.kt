@@ -1,8 +1,8 @@
-package br.com.pedrotlf.trabalho_iot.presentation.domain.use_case
+package br.com.pedrotlf.trabalho_iot.domain.use_case
 
-import br.com.pedrotlf.trabalho_iot.presentation.domain.model.PetData
-import br.com.pedrotlf.trabalho_iot.presentation.domain.model.toPetData
-import br.com.pedrotlf.trabalho_iot.presentation.domain.repository.PetRepository
+import br.com.pedrotlf.trabalho_iot.domain.model.PetData
+import br.com.pedrotlf.trabalho_iot.domain.model.toPetData
+import br.com.pedrotlf.trabalho_iot.domain.repository.PetRepository
 import javax.inject.Inject
 
 class FetchPetDataUseCase @Inject constructor(

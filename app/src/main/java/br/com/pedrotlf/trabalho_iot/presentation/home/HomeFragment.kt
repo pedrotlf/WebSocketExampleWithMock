@@ -10,7 +10,7 @@ import androidx.lifecycle.lifecycleScope
 import br.com.pedrotlf.trabalho_iot.BaseFragment
 import br.com.pedrotlf.trabalho_iot.R
 import br.com.pedrotlf.trabalho_iot.databinding.FragmentHomeBinding
-import br.com.pedrotlf.trabalho_iot.presentation.domain.model.PetData
+import br.com.pedrotlf.trabalho_iot.domain.model.PetData
 import kotlinx.coroutines.launch
 
 
