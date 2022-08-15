@@ -35,7 +35,8 @@ object PetSocketConnection : PetRepository() {
     }
 
     override fun startFetchingPetData() {
-        mSocket?.on("???"){ args ->
+        mSocket?.emit("oi")
+        mSocket?.on("event"){ args ->
             if(args[0] != null){
                 try {
                     val data = args[0] as String

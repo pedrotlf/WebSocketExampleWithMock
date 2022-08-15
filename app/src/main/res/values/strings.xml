@@ -10,7 +10,7 @@
     <string name="temp_low">Temperature is lower then expected</string>
     <string name="temp_high">Temperature is high!</string>
 
-    <string name="movement_ok">Looks OK</string>
+    <string name="movement_ok">May be walking</string>
     <string name="movement_low">Your pet is calm</string>
     <string name="movement_high">Your pet is excited!</string>
 </resources>
